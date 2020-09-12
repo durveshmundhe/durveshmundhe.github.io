@@ -1,2 +1,2 @@
 # personal-website
-Landing page for my profile
+Profile Page

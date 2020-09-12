@@ -1,83 +1,137 @@
 * {
   margin: 0;
-  padding: 0; }
-
-html {
-  font-size: 16px; }
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
-
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
-  background-color: #265a88;
-  color: #fff; }
-  .content-wrapper .content {
-    padding: 0 1rem; }
-  .content-wrapper .personal-info {
-    margin: 0 0 1rem;
-    font-size: 3.2rem; }
-  .content-wrapper .title {
-    display: inline-block;
-    margin-bottom: 1.25rem;
-    padding-bottom: 1rem;
-    font-size: 2.2rem;
-    font-weight: normal;
-    border-bottom: 2px solid #fff; }
-  .content-wrapper .info {
-    font-size: 1.2rem;
-    line-height: 1.5rem; }
-  .content-wrapper .link-container {
-    padding: 3.125rem 0 0.625rem; }
-    .content-wrapper .link-container .social-links {
-      display: flex;
-      justify-content: center;
-      list-style-type: none;
-      font-size: 3em; }
-    .content-wrapper .link-container .icon {
-      padding: 0 1.875rem; }
-      .content-wrapper .link-container .icon i {
-        padding-bottom: 0.4rem;
-        border-bottom: 2px solid transparent; }
-        .content-wrapper .link-container .icon i:hover {
-          border-bottom: 2px solid #fff; }
-    .content-wrapper .link-container .fa {
-      color: #fff; }
-    .content-wrapper .link-container .resume-wrap {
-      display: inline-block;
-      padding: 1.5rem 0 0; }
-    .content-wrapper .link-container .resume-link {
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.2rem;
-      line-height: 1.5rem; }
-      .content-wrapper .link-container .resume-link:after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        background: #fff; }
-
-.link-ref {
-  color: #fff;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media only screen and (min-width: 768px) {
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  /* color: #58595b; */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1600px;
+  width: 100%;
+  height: 100vh;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.container-profile {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-info {
+  width: 50%;
+  padding: 0 15px;
+  font-size: 1.5rem;
+  text-align: left;
+  color: #58595b;
+}
+
+.img-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.main-img {
+  width: 30rem;
+}
+
+.profile-title {
+  margin: 1rem 0 .5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.profile-role {
+  display: inline-block;
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.profile-role::before {
+  content: '';
+  background-color: #6c63ff;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+}
+
+.profile-socials {
+  display: flex;
+  margin: 2rem 0 1rem;
+  list-style-type: none;
+}
+
+.social-list {
+  margin: 0 15px;
+}
+
+.social-icon {
+  height: 45px;
+}
+
+.info-title {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.info {
+  margin: 0 0 1rem;
+}
+
+.link-ref {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+@media(max-width: 991px) {
   .container {
-    width: 700px; } }
-@media only screen and (max-width: 575px) {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .container-profile {
+    width: 100%;
+  }
+
+  .container-info {
+    width: 75%;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media(max-width: 450px) {
   html {
-    font-size: 13px; }
+    font-size: 14px;
+  }
 
-  .content-wrapper .info {
-    padding: 0 2rem; } }
+  .container-info {
+    width: 100%;
+  }
+}
 
-/*# sourceMappingURL=index.css.map */
+@media(max-width: 340px) {
+  html {
+    font-size: 14px;
+  }
+}
+
