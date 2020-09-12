@@ -88,9 +88,9 @@ body {
   transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.social-icon:hover {
+/* .social-icon:hover {
   transform: translateY(-4px);
-}
+} */
 
 .info-title {
   font-size: 1.8rem;
@@ -137,6 +137,12 @@ body {
 @media(max-width: 340px) {
   html {
     font-size: 14px;
+  }
+}
+
+@media (hover: hover) {
+  .social-icon:hover {
+    transform: translateY(-4px);
   }
 }
 
