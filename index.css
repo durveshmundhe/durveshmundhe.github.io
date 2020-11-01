@@ -61,6 +61,7 @@ body {
   display: inline-block;
   position: relative;
   font-size: 1.5rem;
+  color: #000;
 }
 
 .profile-role::before {
@@ -88,10 +89,6 @@ body {
   transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* .social-icon:hover {
-  transform: translateY(-4px);
-} */
-
 .info-title {
   font-size: 1.8rem;
   margin: 1rem 0;
@@ -105,6 +102,17 @@ body {
   text-decoration: none;
   color: #000;
   font-weight: 600;
+}
+
+.skillset {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.skillset svg {
+  margin: 0 1rem 1.5rem;
 }
 
 @media(max-width: 991px) {
