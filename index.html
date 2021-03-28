@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Durvesh Mundhe Personal Website">
@@ -57,5 +57,16 @@
 				</div>
 			</section>
 		</main>
+		<script>
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', () => {
+					navigator.serviceWorker.register('../sw.js').then(reg => {
+						console.log('Service Worker: Registered')
+					}).catch(er => {
+						console.log(`Service Worker error: ${er}`)
+					})
+				})
+			}
+		</script>
 </body>
 </html>
